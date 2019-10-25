@@ -85,6 +85,12 @@ class ContentTypeUpdateType extends AbstractType
                 'empty_data' => false,
                 'disabled' => $isTranslation,
             ])
+            ->add('thumbnailFields', ThumbnailFieldsType::class, [
+                'required' => false,
+                'label' => 'content_type.thumbnail_fields',
+                'empty_data' => false,
+                'disabled' => $isTranslation,
+            ])
             ->add('isContainer', CheckboxType::class, [
                 'required' => false,
                 'label' => 'content_type.is_container',
